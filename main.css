@@ -1,0 +1,91 @@
+body{
+    background: royalblue;
+    padding: 0;
+    margin: 0;
+}
+
+
+#container{
+    width: 30%;
+    min-width: 300px;
+    border: 1px solid royalblue;
+    border-radius: 10px;
+    margin: 100px auto;
+    overflow: hidden;
+
+}
+
+h3{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    height: 20px;
+    padding: 10px;
+}
+
+h3 span{
+    float: right;
+    margin-right: 30px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+input{
+    width: 100%;
+    display: block;
+    height: 20px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    transition: all 0.5s linear;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    width: 100%;
+    background: #f2f2f2;
+    height: 40px;
+    line-height: 40px;
+    transition: all 0.5s linear;
+}
+
+ul li span{
+    display: inline-block;
+    height: 40px;
+    background: crimson;
+    width: 0px;
+    text-align: center;
+    margin-right: 10px;
+    color: white;
+    font-weight: bolder;
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+
+ul li:hover .delete{
+    width: 40px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+li:nth-of-type(even){
+    background: white;
+}
+
+.hide{
+    padding: 0;
+    margin: 0;
+    height: 0;
+}
+
+.done{
+    color: grey;
+    text-decoration: line-through;
+}
